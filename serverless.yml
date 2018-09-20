@@ -1,0 +1,13 @@
+service: rt-onelogin-access 
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: ap-southeast-2
+
+
+functions:
+  getAccessTokens:
+    handler: handler.getAccessTokens
+
